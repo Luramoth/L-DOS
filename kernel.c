@@ -66,7 +66,7 @@ void term_putc(char c){
 
 // print whole strings to the screen
 void term_print(const char* str){
-	for (size_t i = 0; str[i] != '\0'; i++){// keep placing characters untill you reach a line terminating character
+	for (size_t i = 0; str[i] != '\0'; i++){// keep placing characters until you reach a line terminating character
 		term_putc(str[i]);
 	}
 }
