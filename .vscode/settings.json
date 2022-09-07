@@ -1,6 +1,17 @@
 {
 	"cSpell.words": [
+		"APIC",
 		"BBBBFFFFCCCCCCCC",
+		"BOOTLOADER",
+		"edid",
+		"Framebuffer",
+		"HHDM",
+		"lapic",
+		"LEDS",
+		"LIMINE",
+		"MEMMAP",
+		"mpidr",
+		"RSDP",
 		"textmode"
 	]
 }
