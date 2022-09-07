@@ -1,3 +1,6 @@
 *.elf
 *.o
 *.d
+*.iso
+
+iso_root/
