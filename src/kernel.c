@@ -18,6 +18,9 @@
 	You should have received a copy of the GNU General Public License
 	along with this program.  If not, see <https://www.gnu.org/licenses/>. */
 
+//vars
+struct limine_terminal  *terminal;
+
 static volatile struct limine_terminal_request terminal_request = {
 	.id = LIMINE_TERMINAL_REQUEST,
 	.revision = 0
@@ -29,8 +32,8 @@ static void done(void){
 	}
 }
 
-// kernel entry point
-void _start(void){
+// function that initialises the terminal
+void init_term(){
 	// make sure we actually have a terminal
 	if (terminal_request.response == NULL
 	|| terminal_request.response->terminal_count < 1){
@@ -38,8 +41,9 @@ void _start(void){
 	}
 
 	// call the limine terminal to print some stuff
-	// by default the terminal is 113 columns and 48 rows
-	struct limine_terminal  *terminal = terminal_request.response->terminals[0];
+	// by default the terminal is 113 columns and 49 rows
+	terminal = terminal_request.response->terminals[0];
+}
 
 	terminal_request.response->write(terminal, "Hello, World!\n", 14);
 	terminal_request.response->write(terminal, "Kernel initialised\n", 19);
