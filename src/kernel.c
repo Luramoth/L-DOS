@@ -52,8 +52,10 @@ size_t strlen(const char *str){
 	return len;
 }
 
-	terminal_request.response->write(terminal, "Hello, World!\n", 14);
-	terminal_request.response->write(terminal, "Kernel initialised\n", 19);
+// function that prints a string to the terminal
+void print(const char *str){
+	terminal_request.response->write(terminal, str, strlen(str));
+}
 
 	terminal_request.response->write(terminal, "@\n", 2);
 	terminal_request.response->write(terminal, "@@@\n", 4);
