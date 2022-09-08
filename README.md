@@ -3,7 +3,7 @@
 </p>
 
 # L-DOS
-[![Lines of code](https://tokei.rs/b1/github/XAMPPRocky/tokei?category=lines)](https://github.com/Luramoth/L-DOS)
+![Lines of code](https://img.shields.io/tokei/lines/github/Luramoth/L-DOS)
 
 A Dos-like from scratch operating system using Limine bootloader
 
