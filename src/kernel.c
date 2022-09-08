@@ -44,6 +44,13 @@ void init_term(){
 	// by default the terminal is 113 columns and 49 rows
 	terminal = terminal_request.response->terminals[0];
 }
+ // function that determines the length of a string
+size_t strlen(const char *str){
+	size_t len = 0;
+	while(str[len])
+		len ++;
+	return len;
+}
 
 	terminal_request.response->write(terminal, "Hello, World!\n", 14);
 	terminal_request.response->write(terminal, "Kernel initialised\n", 19);
