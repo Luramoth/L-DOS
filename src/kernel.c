@@ -30,7 +30,7 @@ void _start(void){
 
 	terminal_request.response->write(terminal, "@\n", 2);
 	terminal_request.response->write(terminal, "@@@\n", 4);
-	terminal_request.response->write(terminal, "@@@@@&\n", 7);
+	terminal_request.response->write(terminal, "@@@@@,\n", 7);
 	terminal_request.response->write(terminal, "@@@@@@@@\n", 9);
 	terminal_request.response->write(terminal, "@@@@@@@@@@@\n", 12);
 	terminal_request.response->write(terminal, "@@@@@@@@@@@/ \n", 14);
@@ -65,8 +65,8 @@ void _start(void){
 	terminal_request.response->write(terminal, "@@@@@@@@@@@@@  @@@@@@@@@  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  @@@@@@@@( %%%%%%%%%%%%%%          @@@@@@@@", 113);
 	terminal_request.response->write(terminal, "@@@@@@@@@@@@@  @@@@@@@@@  ###########################################  @@@@@@@@( #################       @@@@@@@@", 113);
 	terminal_request.response->write(terminal, "@@@@@@@@@@@@@  @@@@@@@@@  (((((((((((((((((((((((((((((((((((((((((((  @@@@@@@@( (((((((((((((((((((     @@@@@@@@", 113);
+	terminal_request.response->write(terminal, "@@@@@@@@@@@@@  @@@@@@@@@  &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&  @@@@@@@@( &&&&&&&&&&&&&&&&&&&&&&  @@@@@@@@", 113);
 	terminal_request.response->write(terminal, "               @@@@@@@@@                                               @@@@@@@@(                         @@@@@@@@", 113);
-	terminal_request.response->write(terminal, "               @@@@@@@@@           @@@@@@@@@        @@@@@@@@@          @@@@@@@@(       @@@@@@@@@         @@@@@@@@", 113);
 	terminal_request.response->write(terminal, "               @@@@@@@@@           @@@@@@@@@        @@@@@@@@@          @@@@@@@@(       @@@@@@@@@         @@@@@@@@", 113);
 	terminal_request.response->write(terminal, "               @@@@@@@@@           @@@@@@@@@        @@@@@@@@@          @@@@@@@@(       @@@@@@@@@         @@@@@@@@", 113);
 	terminal_request.response->write(terminal, "               @@@@@@@@@           @@@@@@@@@        @@@@@@@@@          @@@@@@@@(       @@@@@@@@@         @@@@@@@@", 113);
