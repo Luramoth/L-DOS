@@ -22,9 +22,58 @@ void _start(void){
 	}
 
 	// call the limine terminal to print some stuff
-	struct limine_terminal *terminal = terminal_request.response->terminals[0];
+	// by default the terminal is 113 columns and 48 rows
+	struct limine_terminal  *terminal = terminal_request.response->terminals[0];
 
 	terminal_request.response->write(terminal, "Hello, World!\n", 14);
+	terminal_request.response->write(terminal, "Kernel initialised\n", 19);
+
+	terminal_request.response->write(terminal, "@\n", 2);
+	terminal_request.response->write(terminal, "@@@\n", 4);
+	terminal_request.response->write(terminal, "@@@@@&\n", 7);
+	terminal_request.response->write(terminal, "@@@@@@@@\n", 9);
+	terminal_request.response->write(terminal, "@@@@@@@@@@@\n", 12);
+	terminal_request.response->write(terminal, "@@@@@@@@@@@/ \n", 14);
+	terminal_request.response->write(terminal, "@@@@@@@@@@@/ \n", 14);
+	terminal_request.response->write(terminal, "@@@@@@@@@@@/ \n", 14);
+	terminal_request.response->write(terminal, "@@@@@@@@@@@/ \n", 14);
+	terminal_request.response->write(terminal, "@@@@@@@@@@@/ \n", 14);
+	terminal_request.response->write(terminal, "@@@@@@@@@@@/ \n", 14);
+	terminal_request.response->write(terminal, "@@@@@@@@@@@/   @@@@@@@@@@@@@@@@@@@@@@@@@@@            @@@@@@@@@@@@@@@@@@@@@@@#           @@@@@@@@@@@@@@@@@@@@@@\n", 112);
+	terminal_request.response->write(terminal, "@@@@@@@@@@@/   @@@@@@@@@@@@@@@@@@@@@@@@@@@@          @@@@@@@@@@@@@@@@@@@@@@@@@@         @@@@@@@@@@@@@@@@@@@@@@@@@", 113);
+	terminal_request.response->write(terminal, "@@@@@@@@@@@/   @@@@@@@@@           @@@@@@@@@        @@@@@@@@@&        @@@@@@@@@(       @@@@@@@@@@      (@@@@@@@@@", 113);
+	terminal_request.response->write(terminal, "@@@@@@@@@@@/   @@@@@@@@@           @@@@@@@@@        @@@@@@@@@          @@@@@@@@(       @@@@@@@@@         @@@@@@@@", 113);
+	terminal_request.response->write(terminal, "@@@@@@@@@@@/   @@@@@@@@@           @@@@@@@@@        @@@@@@@@@          @@@@@@@@(       @@@@@@@@@         @@@@@@@@", 113);
+	terminal_request.response->write(terminal, "@@@@@@@@@@@/   @@@@@@@@@           @@@@@@@@@        @@@@@@@@@          @@@@@@@@(       @@@@@@@@@         @@@@@@@@", 113);
+	terminal_request.response->write(terminal, "@@@@@@@@@@@/   @@@@@@@@@           @@@@@@@@@        @@@@@@@@@          @@@@@@@@(       @@@@@@@@@                 ", 113);
+	terminal_request.response->write(terminal, "@@@@@@@@@@@/   @@@@@@@@@           @@@@@@@@@        @@@@@@@@@          @@@@@@@@(       @@@@@@@@@                 ", 113);
+	terminal_request.response->write(terminal, "@@@@@@@@@@@/   @@@@@@@@@           @@@@@@@@@        @@@@@@@@@          @@@@@@@@(       @@@@@@@@@                 ", 113);
+	terminal_request.response->write(terminal, "@@@@@@@@@@@/   @@@@@@@@@           @@@@@@@@@        @@@@@@@@@          @@@@@@@@(       @@@@@@@@@@##########      ", 113);
+	terminal_request.response->write(terminal, "@@@@@@@@@@@/   @@@@@@@@@           @@@@@@@@@        @@@@@@@@@          @@@@@@@@(        @@@@@@@@@@@@@@@@@@@@@@@@ ", 113);
+	terminal_request.response->write(terminal, "@@@@@@@@@@@/   @@@@@@@@@           @@@@@@@@@        @@@@@@@@@          @@@@@@@@(          @@@@@@@@@@@@@@@@@@@@@@@", 113);
+	terminal_request.response->write(terminal, "@@@@@@@@@@@/   @@@@@@@@@           @@@@@@@@@        @@@@@@@@@          @@@@@@@@(                        &@@@@@@@@", 113);
+	terminal_request.response->write(terminal, "@@@@@@@@@@@/   @@@@@@@@@           @@@@@@@@@        @@@@@@@@@          @@@@@@@@(                         @@@@@@@@", 113);
+	terminal_request.response->write(terminal, "@@@@@@@@@@@/   @@@@@@@@@           @@@@@@@@@        @@@@@@@@@          @@@@@@@@(                         @@@@@@@@", 113);
+	terminal_request.response->write(terminal, "@@@@@@@@@@@/   @@@@@@@@@           @@@@@@@@@        @@@@@@@@@          @@@@@@@@(                         @@@@@@@@", 113);
+	terminal_request.response->write(terminal, "@@@@@@@@@@@/   @@@@@@@@@           @@@@@@@@@        @@@@@@@@@          @@@@@@@@(                         @@@@@@@@", 113);
+	terminal_request.response->write(terminal, "@@@@@@@@@@@/   @@@@@@@@@           @@@@@@@@@        @@@@@@@@@          @@@@@@@@(                         @@@@@@@@", 113);
+	terminal_request.response->write(terminal, "@@@@@@@@@@@/   @@@@@@@@@           @@@@@@@@@        @@@@@@@@@          @@@@@@@@(                         @@@@@@@@", 113);
+	terminal_request.response->write(terminal, "@@@@@@@@@@@/   @@@@@@@@@           @@@@@@@@@        @@@@@@@@@          @@@@@@@@(                         @@@@@@@@", 113);
+	terminal_request.response->write(terminal, "@@@@@@@@@@@/   @@@@@@@@@           @@@@@@@@@        @@@@@@@@@          @@@@@@@@(                         @@@@@@@@", 113);
+	terminal_request.response->write(terminal, "@@@@@@@@@@@/   @@@@@@@@@                                               @@@@@@@@(                         @@@@@@@@", 113);
+	terminal_request.response->write(terminal, "@@@@@@@@@@@@@  @@@@@@@@@  (((((((((((((((((((((((((((((((((((((((((((  @@@@@@@@( ((((((((((((            @@@@@@@@", 113);
+	terminal_request.response->write(terminal, "@@@@@@@@@@@@@  @@@@@@@@@  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  @@@@@@@@( %%%%%%%%%%%%%%          @@@@@@@@", 113);
+	terminal_request.response->write(terminal, "@@@@@@@@@@@@@  @@@@@@@@@  ###########################################  @@@@@@@@( #################       @@@@@@@@", 113);
+	terminal_request.response->write(terminal, "@@@@@@@@@@@@@  @@@@@@@@@  (((((((((((((((((((((((((((((((((((((((((((  @@@@@@@@( (((((((((((((((((((     @@@@@@@@", 113);
+	terminal_request.response->write(terminal, "               @@@@@@@@@                                               @@@@@@@@(                         @@@@@@@@", 113);
+	terminal_request.response->write(terminal, "               @@@@@@@@@           @@@@@@@@@        @@@@@@@@@          @@@@@@@@(       @@@@@@@@@         @@@@@@@@", 113);
+	terminal_request.response->write(terminal, "               @@@@@@@@@           @@@@@@@@@        @@@@@@@@@          @@@@@@@@(       @@@@@@@@@         @@@@@@@@", 113);
+	terminal_request.response->write(terminal, "               @@@@@@@@@           @@@@@@@@@        @@@@@@@@@          @@@@@@@@(       @@@@@@@@@         @@@@@@@@", 113);
+	terminal_request.response->write(terminal, "               @@@@@@@@@           @@@@@@@@@        @@@@@@@@@          @@@@@@@@(       @@@@@@@@@         @@@@@@@@", 113);
+	terminal_request.response->write(terminal, "               @@@@@@@@@           @@@@@@@@@        @@@@@@@@@          @@@@@@@@(       @@@@@@@@@(       @@@@@@@@@", 113);
+	terminal_request.response->write(terminal, "               @@@@@@@@@@@@@@@@@@@@@@@@@@@@/        (@@@@@@@@@@@@@@@@@@@@@@@@@@         @@@@@@@@@@@@@@@@@@@@@@@@@", 113);
+	terminal_request.response->write(terminal, "               @@@@@@@@@@@@@@@@@@@@@@@@@@@            @@@@@@@@@@@@@@@@@@@@@@@%           @@@@@@@@@@@@@@@@@@@@@@& ", 113);
+	terminal_request.response->write(terminal, "\n", 1);
 	terminal_request.response->write(terminal, "Welcome to LDOS!\n", 17);
 
 	//finished, now hang
