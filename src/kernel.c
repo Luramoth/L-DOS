@@ -1,6 +1,7 @@
 #include <stdint.h>
 #include <stddef.h>
 #include "include/limine.h"
+#include "include/kernel.h"
 
 /*	LDOS a from scratch custom 64 bit OS
 	Copyright (C) 2022  Kayla "Luramoth" Earnest
@@ -17,9 +18,6 @@
 
 	You should have received a copy of the GNU General Public License
 	along with this program.  If not, see <https://www.gnu.org/licenses/>. */
-
-//vars
-struct limine_terminal  *terminal;
 
 static volatile struct limine_terminal_request terminal_request = {
 	.id = LIMINE_TERMINAL_REQUEST,
