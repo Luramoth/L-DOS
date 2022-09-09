@@ -3,7 +3,12 @@
 </p>
 
 # L-DOS
-![Lines of code](https://img.shields.io/tokei/lines/github/Luramoth/L-DOS)
+<p align="center">
+	<img alt="Lines of code" src="https://img.shields.io/tokei/lines/github/luramoth/l-dos">
+	<img alt="CodeFactor Grade" src="https://img.shields.io/codefactor/grade/github/luramoth/L-dos/master">
+	<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/luramoth/l-dos">
+	<img alt="GitHub" src="https://img.shields.io/github/license/luramoth/l-dos">
+</p>
 
 A Dos-like from scratch operating system using Limine bootloader
 
