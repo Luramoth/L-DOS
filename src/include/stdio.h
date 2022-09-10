@@ -1,8 +1,6 @@
 #pragma once
 
-#include <stdint.h>
 #include <stddef.h>
-#include "limine.h"
 
 /*	LDOS a from scratch custom 64 bit OS
 	Copyright (C) 2022  Kayla "Luramoth" Earnest
@@ -20,11 +18,8 @@
 	You should have received a copy of the GNU General Public License
 	along with this program.  If not, see <https://www.gnu.org/licenses/>. */
 
-extern struct limine_terminal  *terminal;
+ // function that determines the length of a string
+size_t strlen(const char *str);
 
-static volatile struct limine_terminal_request terminal_request;
-
-static void done(void);
-
-// function that initialises the terminal
-void init_term();
+// function that prints a string to the terminal
+void print(const char *str);

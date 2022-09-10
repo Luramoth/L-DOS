@@ -2,6 +2,7 @@
 #include <stddef.h>
 #include "include/limine.h"
 #include "include/kernel.h"
+#include "include/stdio.h"
 
 /*	LDOS a from scratch custom 64 bit OS
 	Copyright (C) 2022  Kayla "Luramoth" Earnest
@@ -41,18 +42,6 @@ void init_term(){
 	// call the limine terminal to print some stuff
 	// by default the terminal is 113 columns and 49 rows
 	terminal = terminal_request.response->terminals[0];
-}
- // function that determines the length of a string
-size_t strlen(const char *str){
-	size_t len = 0;
-	while(str[len])
-		len ++;
-	return len;
-}
-
-// function that prints a string to the terminal
-void print(const char *str){
-	terminal_request.response->write(terminal, str, strlen(str));
 }
 
 // kernel entry point
