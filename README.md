@@ -14,7 +14,7 @@ A Dos-like from scratch operating system using Limine bootloader
 
 ## building
 make sure you have these tools:
-- `GCC/G++` to compile C/C++ (probably comes with your distrobution)
+- `GCC/G++ 3.4 minumum` to compile C/C++ (probably comes with your distrobution)
 - `xorriso` to make the ISO image
 - `QEMU` for if you want to run the ISO in a VM
 
