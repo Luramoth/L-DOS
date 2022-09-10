@@ -25,6 +25,11 @@ static volatile struct limine_terminal_request terminal_request = {
 	.revision = 0
 };
 
+struct gdtr {
+	uint16_t limite;
+	uint32_t base;
+}__attribute__ ((packed));
+
 static void done(void){
 	for(;;){
 		__asm__("hlt");
@@ -44,7 +49,7 @@ void init_term(){
 	terminal = terminal_request.response->terminals[0];
 }
 
-// kernel entry point
+// ---------------------kernel entry point--------------------------
 void _start(void){
 	print("Hello, World!\n");
 	print("Kernel initialised\n");

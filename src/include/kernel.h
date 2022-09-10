@@ -22,9 +22,6 @@
 
 extern struct limine_terminal  *terminal;
 
+struct gdtr;
+
 static volatile struct limine_terminal_request terminal_request;
-
-static void done(void);
-
-// function that initialises the terminal
-void init_term();
