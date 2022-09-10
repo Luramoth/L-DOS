@@ -5,6 +5,7 @@
 		"BOOTLOADER",
 		"edid",
 		"Framebuffer",
+		"gdtr",
 		"HHDM",
 		"lapic",
 		"LEDS",
